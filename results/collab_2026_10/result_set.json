@@ -1,0 +1,450 @@
+{
+  "schema_version": "0.1",
+  "result_set": "collab_2026_10",
+  "title": "collab_2026_10",
+  "created_at": "2026-10-09T08:39:44+02:00",
+  "builder": "result_viewer/build_result_set.py",
+  "audio": "copy",
+  "selection": {
+    "datasets": null,
+    "task_sets": [
+      "same_speaker__test_test_20_per_speaker",
+      "same_speaker__ref_test_20_per_speaker"
+    ],
+    "models": null,
+    "subset": null,
+    "include_with_errors": true,
+    "include_incomplete": false
+  },
+  "systems": {
+    "chatterbox__multilingual__v2/cloned": {
+      "model_id": "chatterbox__multilingual__v2",
+      "label": "Chatterbox Multilingual V2",
+      "system_name": "Chatterbox TTS",
+      "mode": "cloned",
+      "run_label": null
+    },
+    "chatterbox__multilingual__v3/cloned": {
+      "model_id": "chatterbox__multilingual__v3",
+      "label": "Chatterbox Multilingual V3",
+      "system_name": "Chatterbox TTS",
+      "mode": "cloned",
+      "run_label": null
+    },
+    "f5_tts__german/cloned": {
+      "model_id": "f5_tts__german",
+      "label": "F5-TTS (German)",
+      "system_name": "F5-TTS",
+      "mode": "cloned",
+      "run_label": null
+    },
+    "gemini_tts__3_1_flash_preview/synthesised": {
+      "model_id": "gemini_tts__3_1_flash_preview",
+      "label": "Gemini 3.1 Flash TTS (Preview)",
+      "system_name": "Gemini TTS",
+      "mode": "synthesised",
+      "run_label": null
+    },
+    "gpt_4o_mini_tts__2025_12_15/synthesised": {
+      "model_id": "gpt_4o_mini_tts__2025_12_15",
+      "label": "GPT-4o mini TTS",
+      "system_name": "GPT-4o mini TTS",
+      "mode": "synthesised",
+      "run_label": null
+    },
+    "ims_toucan__toucantts_multilingual/cloned": {
+      "model_id": "ims_toucan__toucantts_multilingual",
+      "label": "IMS Toucan",
+      "system_name": "IMS Toucan",
+      "mode": "cloned",
+      "run_label": null
+    },
+    "omnivoice__base/cloned": {
+      "model_id": "omnivoice__base",
+      "label": "OmniVoice",
+      "system_name": "OmniVoice",
+      "mode": "cloned",
+      "run_label": null
+    },
+    "qwen3_tts__12hz_0_6b_base/cloned": {
+      "model_id": "qwen3_tts__12hz_0_6b_base",
+      "label": "Qwen3-TTS 12Hz 0.6B Base",
+      "system_name": "Qwen3-TTS",
+      "mode": "cloned",
+      "run_label": null
+    },
+    "qwen3_tts__12hz_1_7b_base/cloned": {
+      "model_id": "qwen3_tts__12hz_1_7b_base",
+      "label": "Qwen3-TTS 12Hz 1.7B Base",
+      "system_name": "Qwen3-TTS",
+      "mode": "cloned",
+      "run_label": null
+    },
+    "tacotron2__coqui_thorsten_german/synthesised": {
+      "model_id": "tacotron2__coqui_thorsten_german",
+      "label": "Tacotron 2 (Coqui, Thorsten, German)",
+      "system_name": "Tacotron 2",
+      "mode": "synthesised",
+      "run_label": null
+    },
+    "xtts__v2/cloned": {
+      "model_id": "xtts__v2",
+      "label": "XTTS-v2",
+      "system_name": "XTTS",
+      "mode": "cloned",
+      "run_label": null
+    },
+    "yourtts__de-en-es-fr/cloned": {
+      "model_id": "yourtts__de-en-es-fr",
+      "label": "YourTTS (de/en/es/fr)",
+      "system_name": "YourTTS",
+      "mode": "cloned",
+      "run_label": null
+    }
+  },
+  "groups": [
+    {
+      "group_id": "saar_voice__default/same_speaker__ref_test_20_per_speaker",
+      "dataset_id": "saar_voice__default",
+      "task_set": "same_speaker__ref_test_20_per_speaker",
+      "task_file": "datasets/saar_voice__default/tasks/same_speaker__ref_test_20_per_speaker.tsv",
+      "task_file_sha256": "15a5214a9dfe69f02b0510345e31df86161944c0ffbe6b0dd8bd142823d27ce7",
+      "file": "groups/saar_voice__default__same_speaker__ref_test_20_per_speaker.json",
+      "n_items": 180,
+      "speakers": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "systems": [
+        "chatterbox__multilingual__v2/cloned",
+        "chatterbox__multilingual__v3/cloned",
+        "f5_tts__german/cloned",
+        "gemini_tts__3_1_flash_preview/synthesised",
+        "gpt_4o_mini_tts__2025_12_15/synthesised",
+        "ims_toucan__toucantts_multilingual/cloned",
+        "omnivoice__base/cloned",
+        "qwen3_tts__12hz_0_6b_base/cloned",
+        "qwen3_tts__12hz_1_7b_base/cloned",
+        "tacotron2__coqui_thorsten_german/synthesised",
+        "xtts__v2/cloned",
+        "yourtts__de-en-es-fr/cloned"
+      ],
+      "runs": {
+        "chatterbox__multilingual__v2/cloned": {
+          "run_dir": "model_generations/chatterbox__multilingual__v2/saar_voice__default/cloned/same_speaker__ref_test_20_per_speaker",
+          "status": "completed_with_errors",
+          "checkpoint": "ResembleAI/chatterbox",
+          "revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T22:28:00+02:00",
+          "n_outputs": 179,
+          "n_failed": 1,
+          "n_missing": 0
+        },
+        "chatterbox__multilingual__v3/cloned": {
+          "run_dir": "model_generations/chatterbox__multilingual__v3/saar_voice__default/cloned/same_speaker__ref_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "ResembleAI/chatterbox",
+          "revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T22:33:29+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "f5_tts__german/cloned": {
+          "run_dir": "model_generations/f5_tts__german/saar_voice__default/cloned/same_speaker__ref_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "aihpi/F5-TTS-German/F5TTS_Base/model_420000.safetensors",
+          "revision": "d96c7273045065048afd78df341a2f4a6589bb53",
+          "sample_rate": 24000,
+          "finished_at": "2026-09-28T21:19:06+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "gemini_tts__3_1_flash_preview/synthesised": {
+          "run_dir": "model_generations/gemini_tts__3_1_flash_preview/saar_voice__default/synthesised/same_speaker__ref_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": null,
+          "revision": null,
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T09:18:57+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "gpt_4o_mini_tts__2025_12_15/synthesised": {
+          "run_dir": "model_generations/gpt_4o_mini_tts__2025_12_15/saar_voice__default/synthesised/same_speaker__ref_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": null,
+          "revision": null,
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T09:18:24+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "ims_toucan__toucantts_multilingual/cloned": {
+          "run_dir": "model_generations/ims_toucan__toucantts_multilingual/saar_voice__default/cloned/same_speaker__ref_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "Flux9665/ToucanTTS/ToucanTTS.pt",
+          "revision": "e0afe0ef703d2178dd7dc74ec298693ddb10e720",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T22:35:10+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "omnivoice__base/cloned": {
+          "run_dir": "model_generations/omnivoice__base/saar_voice__default/cloned/same_speaker__ref_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "k2-fsa/OmniVoice",
+          "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-02T12:36:34+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "qwen3_tts__12hz_0_6b_base/cloned": {
+          "run_dir": "model_generations/qwen3_tts__12hz_0_6b_base/saar_voice__default/cloned/same_speaker__ref_test_20_per_speaker",
+          "status": "completed_with_errors",
+          "checkpoint": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+          "revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T22:49:12+02:00",
+          "n_outputs": 179,
+          "n_failed": 1,
+          "n_missing": 0
+        },
+        "qwen3_tts__12hz_1_7b_base/cloned": {
+          "run_dir": "model_generations/qwen3_tts__12hz_1_7b_base/saar_voice__default/cloned/same_speaker__ref_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+          "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T23:01:54+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "tacotron2__coqui_thorsten_german/synthesised": {
+          "run_dir": "model_generations/tacotron2__coqui_thorsten_german/saar_voice__default/synthesised/same_speaker__ref_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "tts_models/de/thorsten/tacotron2-DDC",
+          "revision": "sha256:df1ce9b284491421e2054509beecb74d1bae53c67d1befeed5b2bbd990e89bb8",
+          "sample_rate": 22050,
+          "finished_at": "2026-09-28T21:28:45+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "xtts__v2/cloned": {
+          "run_dir": "model_generations/xtts__v2/saar_voice__default/cloned/same_speaker__ref_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "coqui/XTTS-v2",
+          "revision": "6c2b0d75eae4b7047358e3b6bd9325f857d43f77",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T23:06:53+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "yourtts__de-en-es-fr/cloned": {
+          "run_dir": "model_generations/yourtts__de-en-es-fr/saar_voice__default/cloned/same_speaker__ref_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "AOLCDROM/YourTTS-Fr-En-De-Es",
+          "revision": "5eb9f732f1d263fe4d9c4089a71c562d3dda6f16",
+          "sample_rate": 16000,
+          "finished_at": "2026-10-04T23:09:27+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        }
+      }
+    },
+    {
+      "group_id": "saar_voice__default/same_speaker__test_test_20_per_speaker",
+      "dataset_id": "saar_voice__default",
+      "task_set": "same_speaker__test_test_20_per_speaker",
+      "task_file": "datasets/saar_voice__default/tasks/same_speaker__test_test_20_per_speaker.tsv",
+      "task_file_sha256": "b32a1ec2ade46f5387b0462c6b371d8fe53d4edb28c67667e789b448886c7d28",
+      "file": "groups/saar_voice__default__same_speaker__test_test_20_per_speaker.json",
+      "n_items": 180,
+      "speakers": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "systems": [
+        "chatterbox__multilingual__v2/cloned",
+        "chatterbox__multilingual__v3/cloned",
+        "f5_tts__german/cloned",
+        "gemini_tts__3_1_flash_preview/synthesised",
+        "gpt_4o_mini_tts__2025_12_15/synthesised",
+        "ims_toucan__toucantts_multilingual/cloned",
+        "omnivoice__base/cloned",
+        "qwen3_tts__12hz_0_6b_base/cloned",
+        "qwen3_tts__12hz_1_7b_base/cloned",
+        "tacotron2__coqui_thorsten_german/synthesised",
+        "xtts__v2/cloned",
+        "yourtts__de-en-es-fr/cloned"
+      ],
+      "runs": {
+        "chatterbox__multilingual__v2/cloned": {
+          "run_dir": "model_generations/chatterbox__multilingual__v2/saar_voice__default/cloned/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "ResembleAI/chatterbox",
+          "revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T15:39:03+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "chatterbox__multilingual__v3/cloned": {
+          "run_dir": "model_generations/chatterbox__multilingual__v3/saar_voice__default/cloned/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "ResembleAI/chatterbox",
+          "revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T20:09:50+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "f5_tts__german/cloned": {
+          "run_dir": "model_generations/f5_tts__german/saar_voice__default/cloned/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "aihpi/F5-TTS-German/F5TTS_Base/model_420000.safetensors",
+          "revision": "d96c7273045065048afd78df341a2f4a6589bb53",
+          "sample_rate": 24000,
+          "finished_at": "2026-09-28T16:42:16+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "gemini_tts__3_1_flash_preview/synthesised": {
+          "run_dir": "model_generations/gemini_tts__3_1_flash_preview/saar_voice__default/synthesised/same_speaker__test_test_20_per_speaker",
+          "status": "completed_with_errors",
+          "checkpoint": null,
+          "revision": null,
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T09:19:05+02:00",
+          "n_outputs": 179,
+          "n_failed": 1,
+          "n_missing": 0
+        },
+        "gpt_4o_mini_tts__2025_12_15/synthesised": {
+          "run_dir": "model_generations/gpt_4o_mini_tts__2025_12_15/saar_voice__default/synthesised/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": null,
+          "revision": null,
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T09:17:37+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "ims_toucan__toucantts_multilingual/cloned": {
+          "run_dir": "model_generations/ims_toucan__toucantts_multilingual/saar_voice__default/cloned/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "Flux9665/ToucanTTS/ToucanTTS.pt",
+          "revision": "e0afe0ef703d2178dd7dc74ec298693ddb10e720",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-02T10:20:40+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "omnivoice__base/cloned": {
+          "run_dir": "model_generations/omnivoice__base/saar_voice__default/cloned/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "k2-fsa/OmniVoice",
+          "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-02T11:13:46+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "qwen3_tts__12hz_0_6b_base/cloned": {
+          "run_dir": "model_generations/qwen3_tts__12hz_0_6b_base/saar_voice__default/cloned/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+          "revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T14:31:27+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "qwen3_tts__12hz_1_7b_base/cloned": {
+          "run_dir": "model_generations/qwen3_tts__12hz_1_7b_base/saar_voice__default/cloned/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+          "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T16:18:55+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "tacotron2__coqui_thorsten_german/synthesised": {
+          "run_dir": "model_generations/tacotron2__coqui_thorsten_german/saar_voice__default/synthesised/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "tts_models/de/thorsten/tacotron2-DDC",
+          "revision": "sha256:df1ce9b284491421e2054509beecb74d1bae53c67d1befeed5b2bbd990e89bb8",
+          "sample_rate": 22050,
+          "finished_at": "2026-09-28T21:00:00+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "xtts__v2/cloned": {
+          "run_dir": "model_generations/xtts__v2/saar_voice__default/cloned/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "coqui/XTTS-v2",
+          "revision": "6c2b0d75eae4b7047358e3b6bd9325f857d43f77",
+          "sample_rate": 24000,
+          "finished_at": "2026-10-04T11:59:16+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        },
+        "yourtts__de-en-es-fr/cloned": {
+          "run_dir": "model_generations/yourtts__de-en-es-fr/saar_voice__default/cloned/same_speaker__test_test_20_per_speaker",
+          "status": "completed",
+          "checkpoint": "AOLCDROM/YourTTS-Fr-En-De-Es",
+          "revision": "5eb9f732f1d263fe4d9c4089a71c562d3dda6f16",
+          "sample_rate": 16000,
+          "finished_at": "2026-10-04T11:53:28+02:00",
+          "n_outputs": 180,
+          "n_failed": 0,
+          "n_missing": 0
+        }
+      }
+    }
+  ],
+  "counts": {
+    "groups": 2,
+    "systems": 12,
+    "items": 360,
+    "audio_files": 4677
+  },
+  "skipped_runs": []
+}

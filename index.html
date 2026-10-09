@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TTS Result Viewer</title>
+  <!-- Empty icon, so the browser does not ask the server for /favicon.ico -->
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <header id="toolbar">
+      <div id="toolbar-nav">
+        <label for="set-select" class="sr-only">Result set</label>
+        <select id="set-select" aria-label="Result set" title="Result set"></select>
+
+        <label for="group-select" class="sr-only">Dataset and task set</label>
+        <select id="group-select" aria-label="Dataset and task set" title="Dataset and task set"></select>
+
+        <label for="speaker-select" class="sr-only">Speaker</label>
+        <select id="speaker-select" aria-label="Speaker" title="Speaker"></select>
+
+        <label for="item-select" class="sr-only">Item</label>
+        <select id="item-select" aria-label="Item" title="Item"></select>
+      </div>
+
+      <div id="toolbar-step">
+        <button id="prev-btn" class="tool-btn" title="Previous item (left arrow)">&#9664;</button>
+        <span id="position-display"></span>
+        <button id="next-btn" class="tool-btn" title="Next item (right arrow)">&#9654;</button>
+      </div>
+
+      <div id="toolbar-player">
+        <button id="stop-btn" class="tool-btn" title="Stop playback (Esc)">&#9632; Stop</button>
+      </div>
+    </header>
+
+    <div id="message-bar" hidden></div>
+
+    <section id="reference-panel" aria-label="Reference text">
+      <div id="reference-meta"></div>
+      <div id="reference-text">Loading&hellip;</div>
+    </section>
+
+    <main id="rows-area">
+      <div id="rows" aria-label="Audio rows"></div>
+    </main>
+
+    <footer id="info-bar">
+      <span id="set-info"></span>
+      <span id="key-hints">Keys. 1 to 9 play a row, Space plays or pauses the last row, Esc stops, arrows change the item</span>
+    </footer>
+
+  </div><!-- /#app -->
+
+  <!-- wavesurfer.js v7, waveform renderer and player per row -->
+  <script src="https://cdn.jsdelivr.net/npm/wavesurfer.js@7/dist/wavesurfer.min.js"></script>
+  <!-- js-yaml, parser for configs/viewer_config.yaml -->
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

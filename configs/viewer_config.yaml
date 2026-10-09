@@ -1,0 +1,13 @@
+# Configuration of the viewer application (read by app.js in the browser).
+
+# Directory holding the result sets, relative to index.html.
+# One sub-directory per result set, plus index.json listing them.
+results_root: results
+index_file: index.json
+
+# Result set opened at start. `latest` takes the most recently built set
+# (field `latest` of index.json). Any result set name works as well.
+default_result_set: latest
+
+# Height of each waveform row in pixels.
+waveform_height: 48
